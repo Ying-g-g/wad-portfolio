@@ -332,6 +332,12 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+.mail-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
 /* ------------------------- FOOTER ------------------------- */
 #footer {
     min-height: 7%;
