@@ -57,7 +57,7 @@ export default function Home() {
             </nav>
             <div className="home-wrapper">
                 <div className="home-image-left">
-                    <img src="profile.jpg" alt="Profile image"/>
+                    <img src="/profile.jpg" alt="Profile image"/>
                 </div>
 
                 <div className="home-right-wrapper">
@@ -91,7 +91,7 @@ export default function Home() {
                 </div>
 
                 <div className="about-image-right">
-                    <img src="decoration.gif" alt="Decoration image"/>
+                    <img src="/decoration.gif" alt="Decoration image"/>
                 </div>
             </div>
         </section>
@@ -101,7 +101,7 @@ export default function Home() {
             <div className="project-horizontal-wrapper">
                 <div className="project-wrapper">
                 <div className="project-top">
-                    <img src="project-uiux.jpg" alt="UIUX Project Image"/>
+                    <img src="/project-uiux.jpg" alt="UIUX Project Image"/>
                 </div>
                 <div className="project-bottom">
                     <div className="project-bottom-text">
@@ -124,7 +124,7 @@ export default function Home() {
 
             <div className="project-wrapper">
                 <div className="project-top">
-                    <img src="project-mad.jpg" alt="Mobile Application Development Project Image"/>
+                    <img src="/project-mad.jpg" alt="Mobile Application Development Project Image"/>
                 </div>
                 <div className="project-bottom">
                     <div className="project-bottom-text">
@@ -147,7 +147,7 @@ export default function Home() {
 
             <div className="project-wrapper">
                 <div className="project-top">
-                    <img src="project-db.jpg" alt="Database Cooncept and Design Image"/>
+                    <img src="/project-db.jpg" alt="Database Cooncept and Design Image"/>
                 </div>
                 <div className="project-bottom">
                     <div className="project-bottom-text">
@@ -173,7 +173,7 @@ export default function Home() {
         <section id="contact">
             <div className="contact-wrapper">
                 <div className="contact-left">
-                    <img src="deco2.gif" alt="Contact decoration image"/>
+                    <img src="/deco2.gif" alt="Contact decoration image"/>
                 </div>
 
                 <div className="contact-right">
