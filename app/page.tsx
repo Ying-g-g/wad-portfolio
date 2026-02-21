@@ -24,7 +24,7 @@ export default function Home() {
   //toggle project details
   const [visibleProject, setVisibleProject] = useState<{[key: string]: boolean}>({});
   function projectToggle(projectId: string) {
-    setVisibleProject((prev) => ({...prev, [projectId]: !prev[projectId]}));
+    setVisibleProject((prev) => ({...prev, [projectId]: true}));
   };
 
   return (
