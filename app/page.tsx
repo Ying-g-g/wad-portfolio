@@ -2,22 +2,20 @@
 import {useEffect, useRef, useState} from "react";
 
 export default function Home() {
-  //Typing effect
-  const typingRef = useRef<HTMLHeadingElement>(null);
-  const [displayText, seytDisplayText] = useState("");
-
+    //typing animation
   useEffect(() => {
-    const typingRef = useRef<HTMLHeadingElement>(null);
     const fullText = "Chloe Tan You Tian";
     let currentIndex = 0;
 
     function type() {
       if (currentIndex < fullText.length) {
-        seytDisplayText((prev) => prev + fullText[currentIndex]);
+        setDisplayText((prev) => prev + fullText[currentIndex]);
         currentIndex++;
         setTimeout(type, 150);
       }
     }
+
+    type();
   }, []);
 
   //toggle project details
@@ -195,4 +193,8 @@ export default function Home() {
         <script src="script.js"></script>
     </>
   );
+}
+
+function setDisplayText(arg0: (prev: any) => string) {
+    throw new Error("Function not implemented.");
 }
