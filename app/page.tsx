@@ -8,10 +8,13 @@ export default function Home() {
     let currentIndex = 0;
 
     function type() {
-      if (currentIndex < fullText.length) {
-        setDisplayText((prev) => prev + fullText[currentIndex]);
+      const typingTextElement = document.getElementById("typing-text");
+      if (typingTextElement) {
+        typingTextElement.textContent = fullText.slice(0, currentIndex);
         currentIndex++;
-        setTimeout(type, 150);
+        if (currentIndex <= fullText.length) {
+          setTimeout(type, 150); // Adjust typing speed here
+        }
       }
     }
 
@@ -193,8 +196,4 @@ export default function Home() {
         <script src="script.js"></script>
     </>
   );
-}
-
-function setDisplayText(arg0: (prev: any) => string) {
-    throw new Error("Function not implemented.");
 }
