@@ -13,7 +13,7 @@ export default function Home() {
         typingTextElement.textContent = fullText.slice(0, currentIndex);
         currentIndex++;
         if (currentIndex <= fullText.length) {
-          setTimeout(type, 150); // Adjust typing speed here
+          setTimeout(type, 150);
         }
       }
     }
@@ -133,7 +133,7 @@ export default function Home() {
                     </div>
                       
                     <div className="project-bottom-extra-text">
-                        <div id="p2-details" style={{"display": "none"}}>
+                        <div id="p2-details" style={{"display": visibleProject === "p2-details" ? "block" : "none"}}>
                             <p>Year: 2025</p>
                             <p>Individual project</p>
                         </div>
@@ -156,7 +156,7 @@ export default function Home() {
                     </div>
 
                     <div className="project-bottom-extra-text">
-                        <div id="p3-details" style={{"display": "none"}}>
+                        <div id="p3-details" style={{"display": visibleProject === "p3-details" ? "block" : "none"}}>
                             <p>Year: 2025</p>
                             <p>Group project</p>
                         </div>
@@ -180,7 +180,7 @@ export default function Home() {
                     <h2>Get <span className="special-text">in touch</span></h2>
                     <div className="contact-text">
                         <p className="bold-text">Email:</p>
-                        <p>98491@siswa.unimas.my</p>
+                        <a href="mailto:98491@siswa.unimas.my">98491@siswa.unimas.my</a>
                         <br/>
                         <p className="bold-text">Contact number:</p>
                         <p>016-9762549</p>
