@@ -179,7 +179,7 @@ export default function Home() {
                     <h2>Get <span className="special-text">in touch</span></h2>
                     <div className="contact-text">
                         <p className="bold-text">Email:</p>
-                        <a href="mailto:98491@siswa.unimas.my">98491@siswa.unimas.my</a>
+                        <a href="mailto:98491@siswa.unimas.my" style={{fontSize: "20px", textDecoration: "none", color: "black"}}>98491@siswa.unimas.my</a>
                         <br/>
                         <p className="bold-text">Contact number:</p>
                         <p>016-9762549</p>
