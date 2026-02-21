@@ -22,10 +22,9 @@ export default function Home() {
   }, []);
 
   //toggle project details
-  const [visibleProject, setVisibleProject] = useState<string | null>(null);
-
+  const [visibleProject, setVisibleProject] = useState<{[key: string]: boolean}>({});
   function projectToggle(projectId: string) {
-    setVisibleProject((prev) => (prev === projectId ? null : projectId));
+    setVisibleProject((prev) => ({...prev, [projectId]: !prev[projectId]}));
   };
 
   return (
@@ -110,7 +109,7 @@ export default function Home() {
                     </div>
 
                     <div className="project-bottom-extra-text">
-                        <div style={{display: visibleProject === "p1-details" ? "block" : "none"}} id="p1-details">
+                        <div style={{display: visibleProject["p1-details"] ? "block" : "none"}} id="p1-details">
                             <p>Year: 2024 - 2025</p>
                             <p>Group project</p>
                         </div>
@@ -133,7 +132,7 @@ export default function Home() {
                     </div>
                       
                     <div className="project-bottom-extra-text">
-                        <div id="p2-details" style={{"display": visibleProject === "p2-details" ? "block" : "none"}}>
+                        <div id="p2-details" style={{"display": visibleProject["p2-details"] ? "block" : "none"}}>
                             <p>Year: 2025</p>
                             <p>Individual project</p>
                         </div>
@@ -156,7 +155,7 @@ export default function Home() {
                     </div>
 
                     <div className="project-bottom-extra-text">
-                        <div id="p3-details" style={{"display": visibleProject === "p3-details" ? "block" : "none"}}>
+                        <div id="p3-details" style={{"display": visibleProject["p3-details"] ? "block" : "none"}}>
                             <p>Year: 2025</p>
                             <p>Group project</p>
                         </div>
